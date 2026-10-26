@@ -1,3 +1,11 @@
 spring:
   application:
     name: lexis
+  datasource:
+    url: jdbc:postgresql://localhost:5434/lexis
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
